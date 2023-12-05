@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 8.2.0.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reporte" pageWidth="650" pageHeight="842" columnWidth="610" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6512817a-cc5e-4ff1-8035-d42ff81515d8">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[select * from soporte]]>
+	</queryString>
+	<field name="id_soporte" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_soporte"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_soporte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<field name="monto_soporte" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="monto_soporte"/>
+		<property name="com.jaspersoft.studio.field.label" value="monto_soporte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<field name="descripcion_soporte" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descripcion_soporte"/>
+		<property name="com.jaspersoft.studio.field.label" value="descripcion_soporte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<field name="id_cliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<field name="id_equipo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_equipo"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_equipo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<field name="id_servicio" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_servicio"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_servicio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<field name="estado_soporte" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado_soporte"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado_soporte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<field name="solucion_soporte" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="solucion_soporte"/>
+		<property name="com.jaspersoft.studio.field.label" value="solucion_soporte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="soporte"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="27" width="484" height="36" uuid="73cb1960-86a3-433e-83a2-26e560c07e6e"/>
+				<textElement textAlignment="Center">
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE LA DATA DEL SOPORTE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="-9" y="31" width="60" height="20" uuid="5a79e841-fb70-401f-9980-295d0ac27d7a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÓDIGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="30" width="60" height="20" uuid="1b38f33f-dfca-4508-bba8-f421f42b0756"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="30" width="100" height="20" uuid="fdcb5fe6-67a4-4b98-9952-cebf8410e256"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIPCIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="30" width="60" height="20" uuid="cd8fba20-4e2e-497f-8774-55416af7e039"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLIENTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="30" width="60" height="20" uuid="631b4093-e69d-4908-bcd6-d797b5637b3b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EQUIPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="30" width="70" height="20" uuid="b7bd58cb-928a-4264-98cb-b4a239a58b6d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERVICIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="30" width="60" height="20" uuid="27f64f09-b16d-44f0-ba16-c3de33a36540"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="30" width="80" height="20" uuid="105a0339-382b-4266-b1cc-dabf149744fc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLUCIÓN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-5" y="50" width="620" height="1" uuid="795b85d2-4183-4afb-a30b-6f3f1400ed99"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-2" width="60" height="20" uuid="ef979b31-f2b2-4115-919a-ba10bfa2a819"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_soporte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="-2" width="60" height="20" uuid="67873e5f-65e9-444b-99f5-d07373da82b2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{monto_soporte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="-2" width="100" height="20" uuid="b5deb319-ffa7-4fbb-aecf-6437d6a86d08"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion_soporte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="-2" width="60" height="20" uuid="9850d9f1-c1ad-4f2d-b5b1-d91155b55482"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="-2" width="60" height="20" uuid="cfd717ce-0a93-4276-af5b-eb2a430327ea"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_equipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="-2" width="70" height="20" uuid="33bd5415-90af-442e-9cc4-d4b88efb56a9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_servicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="60" height="20" uuid="6ff1f22d-c042-410a-bebd-d8763216dd2f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estado_soporte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="549" y="0" width="78" height="20" uuid="87d87ffa-985e-4515-b2be-a385a17869b2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{solucion_soporte}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="460" y="0" width="100" height="30" uuid="d03e7e19-fa67-47eb-9443-08ed689557fc"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="0" width="100" height="30" uuid="46337ab5-3f89-4aa1-9390-94d8eeac6bbe"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
